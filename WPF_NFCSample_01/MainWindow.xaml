@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF_NFCSample_01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="NFC Service"
+                       FontWeight="Bold"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Top"
+                       Foreground="Red"
+                       Margin="10,0,0,0"
+                       FontWeight="Bold"
+                       Text="Event Type:"/>
+                <TextBlock x:Name="txtEventType"
+                       VerticalAlignment="Top"
+                       Foreground="Red"
+                       Margin="10,0,0,0"/>
+            </StackPanel>
+            <TextBlock VerticalAlignment="Top"
+                       Foreground="Red"
+                       Margin="10"
+                       FontWeight="Bold"
+                       Text="Event Message:"/>
+            <TextBlock x:Name="txtEventData"
+                       Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
